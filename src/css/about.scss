@@ -1,0 +1,251 @@
+
+.main {
+    .title-en {
+        font-size: 13px;
+        font-weight: 400;
+        color: rgba(153,153,153,1);
+        margin-bottom: 16px;
+    }
+    .title {
+        font-size: 34px;
+        font-weight: 600;
+        color: #333333;
+        margin-bottom: 45px;
+    }
+    .detail {
+        font-size: 14px;
+        font-weight: 400;
+        color: #666666;
+        width: 597px;
+    }
+}
+.container {
+    width: 1200px !important;
+}
+
+
+.about-main {
+    .header_bg {
+        height: 500px;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    } 
+    .container-company {
+        padding-top: 197px;
+        
+        .company-top {
+            min-height: 450px;
+            .company-right {
+                position: relative;
+                widows: 521px;
+                height: 432px;
+                .company-right-bg {
+                    position: absolute;
+                    widows: 521px;
+                    height: 432px;
+                }
+                .palyer_img {
+                    position: absolute;
+                    width: 140px;
+                    height: 140px;
+                    left: 50%;
+                    top: 50%;
+                    margin-top: -70px;
+                    margin-left: -50px;
+                }
+            }
+        }
+        .company-bottom {
+            display: block;
+            width: 1057px;
+            border-top: 1px solid rgba(204,204,204,1);
+            height: 100px;
+            line-height: 71px;
+            p {
+                font-size:16px;
+                font-weight:400;
+                color:rgba(51,51,51,1);
+                span {
+                    font-size:24px;
+                    font-weight:bold;
+                    color:rgba(230,0,18,1);
+                    margin: 7px;
+                }
+            }
+        }
+        
+    }
+    .container-strengths {
+        margin-top: 50px;
+        .strengths-item {
+            padding: 6px;
+            cursor: pointer;
+            &:nth-child(1) {
+                padding-left: 0;
+            }
+            &:last-child{
+                padding-right: 0;
+                .si-warpper {
+                    padding-top: 22px;
+                }
+            }
+            .si-warpper {
+                width: 100%;
+                height: 116px;
+                background: #ededed;
+                position: relative;
+                padding: 31px;
+                padding-left: 66px;
+                span {
+                    display: block;
+                }
+                .white_img {
+                    opacity: 0;
+                }
+                img {
+                    position: absolute;
+                    width: 41px;
+                    height: 35px;
+                    top: 50%;
+                    left: 10px;
+                    margin-top: -17.5px;
+                }
+                .strengths-title {
+                    font-size:22px;
+                    font-weight:400;
+                    color:rgba(51,51,51,1);
+                }
+                .strengths-detail {
+                    margin-top: 7px;
+                }
+            }
+            &:nth-child(2),&:nth-child(4) {
+               img {
+                   height: 42px;
+                   width: auto;
+                   margin-top: -21px;
+               }
+            }
+            &:hover {
+                .si-warpper {
+                    background-color: #E60012;
+                    color: #fff;
+                    .white_img {
+                        opacity: 1;
+                    }
+                    .red_img {
+                        opacity: 0;
+                    }
+                    .strengths-title {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    .container-team {
+        margin-top: 177px;
+        .team-swiper-imgs {
+            position: relative;
+            height: 460px;
+            width: 780px;
+                .swiper-ace {
+                    height: 460px;
+                    width: 780px;
+                    padding: 0 10px;
+                    img {
+                        width: 240px;
+                        height: 370px;
+                    }
+                    .swiper-item-name {
+                        height: 17px;
+                        font-size: 18px;
+                        font-weight: 600;
+                        color: rgba(51,51,51,1);
+                        text-align: center;
+                        margin-top: 26px;
+                    }
+                    .swiper-item-detail {
+                        font-size: 14px;
+                        font-weight: 600;
+                        color: rgba(153,153,153,1);
+                        text-align: center;
+                        margin-top: 10px;
+                    }
+            }
+            .swiper-button-prev,
+            .swiper-button-next {
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                top: 50%;
+                left: -30px;
+                // background-color: red;
+                z-index: 9;
+                margin-top: -15px;
+            }
+            .swiper-button-next {
+                left: auto;
+                right: -60px;
+            }
+        }
+        .detail {
+            width: 311px !important;
+        }
+        .team-btn{
+            width:87px;
+            height:38px;
+            background:rgba(230,0,18,1);
+            border-radius:19px;
+            color: #fff;
+            display: block;
+            text-align: center;
+            line-height: 38px;
+            margin-top: 43px;
+        }
+      
+    }
+    .container-product {
+        margin-top: 203px;
+        text-align: center;
+        padding: 0;
+        .product-item {
+            padding: 0;
+           img {
+                width: 271px;
+                &:nth-child(2) {
+                    margin-top: 45px;
+                }
+           }
+
+           &:nth-child(1) {
+               img {
+                width: 292px;
+               }
+               
+           }
+        }
+    }
+    .container-qall {
+        text-align: center;
+        margin-top: 197px;
+        .detail {
+            width: 100%;
+        }
+        img {
+            margin-top: 100px;
+            width: 970px;
+            height: 490px;
+        }
+    }
+}
+.section-footer {
+    .footer-census{
+        background-color: #fff !important;
+    }
+    .footer-capy {
+        margin-top: 60px !important;
+    }
+}

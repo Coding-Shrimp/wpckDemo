@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body>
+    <header class=" ">
+     
+        <div class="header-box warpper">
+            <div class="header-logo col-sm-2">
+            </div> 
+            <div class="header-nav col-sm-10">
+                <ul>
+                    <% list = require('../data.js').nav %>
+                    <% list.forEach(function(item){ %>
+                        <li class="<%= htmlWebpackPlugin.options.path === item.path ? 'nav-active' : ' ' %>">
+                            <a href="./<%= item.path %>.html"><%= item.text %></a>
+                        </li>
+                    <% }); %>
+                </ul>
+            </div>
+        </div> 
+    </header>
